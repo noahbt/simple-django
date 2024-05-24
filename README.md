@@ -7,11 +7,10 @@ I followed this simple tutorial on DigitalOcean to get Django initially setup. Y
 - https://www.digitalocean.com/community/tutorials/build-a-to-do-application-using-django-and-react
 - https://www.digitalocean.com/community/tutorials/how-to-install-django-and-set-up-a-development-environment-on-ubuntu-20-04
 
-**Setup**
+**Initial Setup**
 ```
-cd Code
-mkdir django-apps
-cd django-apps
+mkdir simple-django
+cd simple-django/
 python3 -m venv venv
 source venv/bin/activate
 pip list
@@ -23,4 +22,14 @@ cd backend
 ./manage.py migrate
 ./manage.py createsuperuser
 ./manage.py runserver localhost:8000
+```
+
+## Front-End
+```
+cd simple-django/
+npx create-react-app frontend
+cd frontend
+npm start
+npm install bootstrap
+npm install reactstrap
 ```
