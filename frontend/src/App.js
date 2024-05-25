@@ -35,6 +35,7 @@ class App extends Component {
     };
   }
 
+  // componentDidMount is invoked immediately after a component is mounted (inserted into the tree).
   componentDidMount() {
     this.refreshList();
   }
