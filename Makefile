@@ -9,8 +9,11 @@ help: ## Show this help.
 	sed -E 's/(.*)(EX:)(.*)/\1$(YELLOW)\2\3$(END_COLOR)/' | \
 	column -s '~' -t
 
+build-frontend:
+	(cd frontend && npm install)
+
 run-frontend: ## run the React frontend
-	echo "Running frontend"
+	(cd frontend && npm start)
 
 run-backend: ## Run the Django backend
-	echo "Running backend"
+	./manage.py run_server
