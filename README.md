@@ -16,7 +16,7 @@ source venv/bin/activate
 pip list
 pip install django
 django-admin --version
-django-admin startproject backend
+django-admin startproject backend .
 cd backend
 ./manage.py startapp todo
 ./manage.py migrate
